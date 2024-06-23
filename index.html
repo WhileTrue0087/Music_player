@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background">
+    </div>
+    <div class="music-player">
+        <div class="header">
+            <div class="image">
+                <img src="img/img.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="system">
+                    windows
+                </div>
+                <div class="song-name">
+                    love music
+                </div>
+                <div class="singer">
+                    bethoven
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="player">
+            <audio src="Music/Bethoven - love story (piano).mp3" id="audio"></audio>
+            <div class="time-line" id="time-line">
+                <div class="background"></div>
+                <div class="fill" id="fill"></div>
+                <div class="fill-btn" id="fill-btn"></div>
+                <div id="left-width-time-line"></div>
+                <div id="right-width-time-line"></div>
+            </div>
+            <div class="under-time-line">
+                <span id="time-past">0:00</span>
+                <span id="time-left">-0:00</span>
+            </div>
+            <div class="buttons">
+                <button class="btn">
+                    <img src="img/icons8-replay-5-100.png" id="back-btn" onclick="back_5()">
+                </button>
+                <button class="btn">
+                    <img src="img/icons8-circled-play-100.png" id="play-pause-btn" onclick="play_pause_btn()">
+                </button>
+                <button class="btn">
+                    <img src="img/icons8-forward-5-100.png" id="next-btn" onclick="next_5()">
+                </button>
+                <div class="volume-style">
+                    <div class="volume" id="volume">
+                        <div class="background"></div>
+                        <div class="fill"></div>
+                        <div class="fill-btn"></div>
+                        <div id="left-width-volume"></div>
+                        <div id="right-width-volume"></div>
+                        <div id="volume-value">100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="slider.js"></script>
+        <script src="javascript.js"></script>
+
+</body>
+
+</html>
